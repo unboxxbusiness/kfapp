@@ -1,0 +1,69 @@
+# ==============================================================================
+# Kampus Filter - Production .gitignore (Zero-Secret Leak Architecture)
+# ==============================================================================
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js Build Output
+/.next/
+/out/
+/build
+
+# Netlify Build Artifacts
+/.netlify
+
+# Environment & Secret Files (CRITICAL: Never commit any real credentials!)
+.env
+.env*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+.env.staging
+# Allow example template only
+!.env.example
+
+# Service Account Keys, Private Certificates & Tokens
+*.pem
+*.key
+*.p12
+*.crt
+*serviceAccount*.json
+*firebase-adminsdk*.json
+*credentials*.json
+
+# Logs & Debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Testing & Coverage
+/coverage
+
+# Vercel / Netlify Local
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Auto-generated agent docs
+AGENTS.md

@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-09-22T12:24:40.562Z",
+  "totalArticles": 4961,
+  "articlesWithFeeTable": 4360,
+  "articlesWithoutFeeTable": 601,
+  "verifiedRealisticFees": 3600,
+  "anomalySummary": {
+    "placeholderCount": 156,
+    "suspiciousLowCount": 1005,
+    "suspiciousHighCount": 110,
+    "totalFlagged": 1271
+  },
+  "samplePlaceholder": [
+    {
+      "slug": "career-after-bca-jobs-higher-studies-salary-options",
+      "title": "Career After BCA: Jobs, Higher Studies & Salary Options (2027 Guide)",
+      "college": "Direct Job (BCA)",
+      "rawFee": "₹0 (Initial)"
+    },
+    {
+      "slug": "career-after-b-tech-computer-science-jobs-higher-studies-salary-options",
+      "title": "Career After B.Tech Computer Science: Jobs, Higher Studies & Salary Options (2027 Guide)",
+      "college": "Software Engineering (Job)",
+      "rawFee": "₹0 (Training)"
+    },
+    {
+      "slug": "career-after-mca-jobs-higher-studies-salary-options",
+      "title": "Career After MCA: Jobs, Higher Studies & Salary Options (2026-27 Guide)",
+      "college": "Software Engineer",
+      "rawFee": "N/A"
+    },
+    {
+      "slug": "career-after-mca-jobs-higher-studies-salary-options",
+      "title": "Career After MCA: Jobs, Higher Studies & Salary Options (2026-27 Guide)",
+      "college": "Data Scientist",
+      "rawFee": "N/A"
+    },
+    {
+      "slug": "studying-in-bangalore-cost-of-living-hostels-student-life-guide",
+      "title": "Studying in Bangalore: Cost of Living, Hostels & Student Life Guide",
+      "college": "Standard Bangalore PGs",
+      "rawFee": "N/A"
+    }
+  ],
+  "sampleLowAnomalies": [
+    {
+      "slug": "best-ba-economics-colleges-in-odisha",
+      "title": "Best BA Economics Colleges in Odisha: 2026-2027 Admissions Guide",
+      "college": "Ravenshaw University",
+      "fee": 25000,
+      "rawFee": "₹25,000",
+      "duration": "3 years",
+      "reason": "Suspiciously low total fee (< ₹30,000 for private college, likely per semester)"
+    },
+    {
+      "slug": "best-ba-economics-colleges-in-odisha",
+      "title": "Best BA Economics Colleges in Odisha: 2026-2027 Admissions Guide",
+      "college": "BJB Autonomous College",
+      "fee": 20000,
+      "rawFee": "₹20,000",
+      "duration": "3 years",
+      "reason": "Suspiciously low total fee (< ₹30,000 for private college, likely per semester)"
+    },
+    {
+      "slug": "best-ba-economics-colleges-in-odisha",
+      "title": "Best BA Economics Colleges in Odisha: 2026-2027 Admissions Guide",
+      "college": "Rama Devi Women's University",
+      "fee": 18000,
+      "rawFee": "₹18,000",
+      "duration": "3 years",
+      "reason": "Suspiciously low total fee (< ₹30,000 for private college, likely per semester)"
+    },
+    {
+      "slug": "best-colleges-for-m-com-in-delhi-2026-fees-placements-roi",
+      "title": "Best Colleges for M.Com in Delhi 2026: Fees, Placements & ROI",
+      "college": "Jamia Millia Islamia (JMI)",
+      "fee": 28000,
+      "rawFee": "₹28,000",
+      "duration": "2 years",
+      "reason": "Suspiciously low total fee (< ₹30,000 for private college, likely per semester)"
+    },
+    {
+      "slug": "best-ma-economics-colleges-in-delhi-admissions-fees-and-rti-placements-2026",
+      "title": "Best MA Economics Colleges in Delhi: Admissions, Fees, and RTI Placements (2026)",
+      "college": "Jawaharlal Nehru University (JNU)",
+      "fee": 25000,
+      "rawFee": "₹25,000",
+      "duration": "2 years",
+      "reason": "Suspiciously low total fee (< ₹30,000 for private college, likely per semester)"
+    }
+  ],
+  "sampleHighAnomalies": [
+    {
+      "slug": "best-mbbs-colleges-in-andhra-pradesh",
+      "title": "Best MBBS Colleges in Andhra Pradesh: 2026-2027 Admissions Guide",
+      "college": "Private Medical Univ B",
+      "fee": 6200000,
+      "rawFee": "₹62.0L (Total)",
+      "duration": "5.5 years",
+      "reason": "High fee outlier (> ₹40 Lakhs for domestic program)"
+    },
+    {
+      "slug": "best-colleges-for-mbbs-in-mumbai-2026-fees-cutoffs-and-real-rti-placement-audits",
+      "title": "Best Colleges for MBBS in Mumbai 2026: Fees, Cutoffs, and Real RTI Placement Audits",
+      "college": "K.J. Somaiya Medical College",
+      "fee": 5500000,
+      "rawFee": "₹55.0 Lakhs",
+      "duration": "5.5 years",
+      "reason": "High fee outlier (> ₹40 Lakhs for domestic program)"
+    },
+    {
+      "slug": "best-b-tech-mechanical-engineering-colleges-in-bangalore-fees-rti-placements-roi",
+      "title": "Best B.Tech Mechanical Engineering Colleges in Bangalore: Fees, RTI Placements & ROI",
+      "college": "PES University",
+      "fee": 16000000,
+      "rawFee": "₹16,000,000 (PESSAT)",
+      "duration": "4 years",
+      "reason": "High fee outlier (> ₹40 Lakhs for domestic program)"
+    },
+    {
+      "slug": "best-mbbs-colleges-in-bangalore-2026-fees-cutoffs-and-real-placement-audits",
+      "title": "Best MBBS Colleges in Bangalore 2026: Fees, Cutoffs, and Real Placement Audits",
+      "college": "St. John's Medical College",
+      "fee": 4500000,
+      "rawFee": "₹45,00,000",
+      "duration": "5.5 years",
+      "reason": "High fee outlier (> ₹40 Lakhs for domestic program)"
+    },
+    {
+      "slug": "best-mbbs-colleges-in-bangalore-2026-fees-cutoffs-and-real-placement-audits",
+      "title": "Best MBBS Colleges in Bangalore 2026: Fees, Cutoffs, and Real Placement Audits",
+      "college": "MS Ramaiah Medical College",
+      "fee": 5500000,
+      "rawFee": "₹55,00,000",
+      "duration": "5.5 years",
+      "reason": "High fee outlier (> ₹40 Lakhs for domestic program)"
+    }
+  ]
+}
