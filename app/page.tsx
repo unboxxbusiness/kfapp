@@ -7,7 +7,7 @@ import {
 } from '@/lib/supabase';
 import { HomeFeed } from '@/components/home/HomeFeed';
 
-export const revalidate = 60; // Revalidate every 60 seconds (ISR)
+export const revalidate = 86400; // Revalidate every 24 hours (ISR CDN Edge Cache)
 
 export const metadata: Metadata = {
   title: 'Kampus Filter — India’s Network for Student College Decisions',

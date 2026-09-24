@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: '404: Page Not Found | Kampus Filter',
   description:
     'The requested college decision guide or comparison report could not be found. Explore 2,100+ verified guides on Kampus Filter.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function NotFound() {

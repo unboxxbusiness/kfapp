@@ -25,7 +25,7 @@ import { KampusFooter } from '@/components/article/KampusFooter';
 import { slugifyHeading } from '@/lib/toc';
 
 export const dynamicParams = true; // Enables on-demand rendering for any newly added articles
-export const revalidate = 60; // Incremental Static Regeneration (ISR) every 60 seconds
+export const revalidate = 86400; // Incremental Static Regeneration (ISR) 24 hours CDN edge cache
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -41,6 +41,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!article) {
     return {
       title: 'Article Not Found | Kampus Filter',
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 

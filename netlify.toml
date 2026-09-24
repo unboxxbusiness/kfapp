@@ -43,6 +43,135 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 # ------------------------------------------------------------------------------
+# Permanent 301 SEO Redirects (Legacy URL Migration)
+# ------------------------------------------------------------------------------
+[[redirects]]
+  from = "/courses"
+  to = "/categories"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/courses/btech"
+  to = "/category/engineering-btech"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/courses/bhm"
+  to = "/category/hospitality-hotel-management-bhm"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/courses/mbbs"
+  to = "/categories"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/courses/*"
+  to = "/categories"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/colleges/bhm-colleges-pune-5-10-lakh-cuet"
+  to = "/category/hospitality-hotel-management-bhm"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cities"
+  to = "/category/city-wise-courses"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cities/hyderabad"
+  to = "/category/colleges-in-hyderabad"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/compare"
+  to = "/tools/roi-calculator"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/education-news"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/university-admissions"
+  to = "/category/admission-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/future-skills"
+  to = "/category/career-guides"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/topics/ai"
+  to = "/category/computer-applications-bca-mca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cookie-policy"
+  to = "/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/unsubscribe"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/author/*"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apply"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/typescript-in-react-a-complete-beginners-tutorial-to-build-type-safe-apps"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/bca-vs-btech-cs-in-2026-career-scope-salaries-placement-guide"
+  to = "/category/computer-applications-bca-mca"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/neet-ug-2026-nta-releases-new-eligibility-exam-guidelines"
+  to = "/category/admission-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/amity-vs-sharda-university-admissions-2026-fees-placements-admission-process-selection-verdict"
+  to = "/category/colleges-in-delhi-ncr"
+  status = 301
+  force = true
+
+# ------------------------------------------------------------------------------
 # Secret & Dotfile Block Rules (CDN Edge Defense)
 # ------------------------------------------------------------------------------
 # Prohibit any attempt to fetch environment files or configuration via URL

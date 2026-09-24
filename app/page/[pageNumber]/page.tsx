@@ -7,7 +7,7 @@ import {
 import { HomeFeed } from '@/components/home/HomeFeed';
 
 export const dynamicParams = true;
-export const revalidate = 60;
+export const revalidate = 86400; // Revalidate every 24 hours (ISR CDN Edge Cache)
 
 interface PageProps {
   params: Promise<{ pageNumber: string }>;

@@ -3,14 +3,26 @@ import { MetadataRoute } from 'next';
 export default function robots(): MetadataRoute.Robots {
   const baseUrl = 'https://kampusfilter.com';
 
+  const disallowList = [
+    '/api/',
+    '/private/',
+    '/apply',
+    '/search',
+    '/*?*sort=*',
+    '/*?*type=*',
+    '/*?*college=*',
+    '/*?*course=*',
+    '/*?*q=*',
+  ];
+
   return {
     rules: [
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/private/'],
+        disallow: disallowList,
       },
-      // Explicitly allow leading AI search engines and chatbot indexers
+      // Explicitly allow leading AI search engines and chatbot indexers while protecting crawl budget
       {
         userAgent: [
           'Googlebot',
@@ -25,6 +37,7 @@ export default function robots(): MetadataRoute.Robots {
           'CCBot',
         ],
         allow: '/',
+        disallow: disallowList,
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

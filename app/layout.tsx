@@ -51,9 +51,6 @@ export const metadata: Metadata = {
   creator: 'Kampus Filter',
   publisher: 'Kampus Filter',
   category: 'education',
-  alternates: {
-    canonical: '/',
-  },
   icons: {
     icon: 'https://res.cloudinary.com/dhrigocvd/image/upload/v1769405440/apple-touch-icon_j72dso.png',
     apple: 'https://res.cloudinary.com/dhrigocvd/image/upload/v1769405440/apple-touch-icon_j72dso.png',

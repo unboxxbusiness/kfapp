@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { getArticleSlugsForSitemap, getAllCategorySlugs } from '@/lib/supabase';
 
-export const revalidate = 60; // Refresh sitemap cache every 60 seconds (dynamic ISR)
+export const revalidate = 86400; // Refresh sitemap cache every 24 hours (CDN edge cached)
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://kampusfilter.com';

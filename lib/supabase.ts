@@ -185,7 +185,10 @@ export async function getPaginatedArticles(options?: {
 
     let query = supabase
       .from('articles')
-      .select('*', { count: 'exact' })
+      .select(
+        'id, slug, title, category, reading_time_minutes, created_at, meta_description, direct_answer, is_published, status',
+        { count: 'exact' }
+      )
       .order('created_at', { ascending: false });
 
     if (options?.cityFilter && options.cityFilter.length > 0) {
@@ -556,8 +559,19 @@ export function slugifyCategory(category?: string): string {
  * Paginates in batches of 1,000 to scan the entire 4,000+ article database.
  * Wrapped in cache() to run only once per request/render.
  */
+let cachedCategoryCounts: { data: Record<string, number>; timestamp: number } | null = null;
+const CATEGORY_CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 hours
+
 export const fetchAllCategoryCounts = cache(
   async (): Promise<Record<string, number>> => {
+    if (
+      cachedCategoryCounts &&
+      Date.now() - cachedCategoryCounts.timestamp < CATEGORY_CACHE_TTL_MS &&
+      Object.keys(cachedCategoryCounts.data).length > 0
+    ) {
+      return cachedCategoryCounts.data;
+    }
+
     try {
       const counts: Record<string, number> = {};
       const pageSize = 1000;
@@ -581,10 +595,13 @@ export const fetchAllCategoryCounts = cache(
         offset += pageSize;
       }
 
+      if (Object.keys(counts).length > 0) {
+        cachedCategoryCounts = { data: counts, timestamp: Date.now() };
+      }
       return counts;
     } catch (err) {
       console.error('[Supabase] Exception fetching category counts:', err);
-      return {};
+      return cachedCategoryCounts?.data || {};
     }
   }
 );

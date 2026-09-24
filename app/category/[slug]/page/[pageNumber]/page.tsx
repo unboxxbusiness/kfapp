@@ -8,7 +8,7 @@ import {
 import { CategoryFeed } from '@/components/category/CategoryFeed';
 
 export const dynamicParams = true;
-export const revalidate = 60;
+export const revalidate = 86400; // Revalidate every 24 hours (ISR CDN Edge Cache)
 
 interface PaginatedCategoryPageProps {
   params: Promise<{ slug: string; pageNumber: string }>;
